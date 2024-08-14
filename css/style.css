@@ -1,0 +1,152 @@
+/* Reset */
+@import url("reset.css");
+/* CSS */
+@import url("header.css");
+@import url("hero.css");
+@import url("features.css");
+@import url("services.css");
+@import url("reviews.css");
+@import url("location.css");
+@import url("footer.css");
+
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+body{
+    font-family: 'Plus Jakarta Sans';
+    color: #5e6282;
+}
+
+[class*="__container"]{
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: clip;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+
+.header-block {
+    padding: 0;
+    font-weight: 800;
+
+    display: grid;
+    gap: 10px;
+}
+
+.header-block-margin{
+    margin-bottom: 90px;
+}
+.header-block__label {
+    text-transform: uppercase;
+
+    font-size: 18px;
+    line-height: 128%; /* 23/18 */
+    letter-spacing: 2px;
+    
+    color: #4475F2;
+}
+
+.header-block__title {
+    font-size: 48px;
+    line-height: 136%; /* 65/48 */
+    
+    color: #000000;
+}
+
+.page__hero,
+.page__features,
+.page__services,
+.page__reviews{
+    margin-bottom: 200px;
+}
+
+.page__location{
+    margin-bottom: 240px;
+}
+
+@media (max-width: 1200.98px) {
+    .header-block-margin{
+        margin-bottom: 70px;
+    }
+    .page__hero,
+    .page__features,
+    .page__services,
+    .page__reviews,
+    .page__location{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-block-margin{
+        margin-bottom: 50px;
+    }
+
+    .header-block__label{
+        font-size: 16px;
+    }
+    
+    .header-block__title{
+        font-size: 42px;
+    }
+
+    .page__hero,
+    .page__features,
+    .page__services,
+    .page__reviews,
+    .page__location{
+        margin-bottom: 60px;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .header-block-margin{
+        margin-bottom: 40px;
+    }
+
+    .header-block__label{
+        font-size: 13px;
+    }
+    
+    .header-block__title{
+        font-size: 30px;
+    }
+
+    .page__hero,
+    .page__features,
+    .page__services,
+    .page__reviews,
+    .page__location{
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 479.98px) {
+    .header-block-margin{
+        margin-bottom: 30px;
+    }
+
+    .header-block__label{
+        font-size: 12px;
+    }
+    
+    .header-block__title{
+        font-size: 28px;
+    }
+    
+}
