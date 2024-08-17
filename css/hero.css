@@ -108,12 +108,12 @@
     color: #fff;
     font-weight: 700;
     line-height: 156.25%; /* 25/16 */
-    transition: 0.7s ease;
+    transition: 0.3s ease;
 }
 
 .content-hero__button:hover{
-    box-shadow: 0 30px 40px 0 rgba(68, 117, 242, 0.50);
-    transform: scale(1.1);
+    box-shadow: 0 20px 50px 0 rgba(68, 117, 242, 0.50);
+    transform: scale(1.05);
 }
 .hero__images {
     flex: 0 1 50%;
